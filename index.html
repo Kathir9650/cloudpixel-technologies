@@ -1,52 +1,52 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#080f24" />
-    <meta name="robots" content="index, follow" />
-    <meta
-      name="description"
-      content="CloudPixel Technologies builds modern websites, cloud solutions and DevOps experiences for growing businesses."
-    />
-
-    <!-- Open Graph / Social Previews -->
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="CloudPixel Technologies | Build. Innovate. Deploy." />
-    <meta
-      property="og:description"
-      content="Modern web engineering, cloud architecture, and DevOps automation for growing businesses."
-    />
-    <meta property="og:image" content="/og-banner.png" />
-
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="CloudPixel Technologies | Build. Innovate. Deploy." />
-    <meta
-      name="twitter:description"
-      content="Modern web engineering, cloud architecture, and DevOps automation for growing businesses."
-    />
-
-    <title>CloudPixel Technologies | Build. Innovate. Deploy.</title>
-    <link rel="icon" href="/logo.svg" type="image/svg+xml" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-
-    <!-- Organization Schema -->
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "CloudPixel Technologies",
-        "description": "CloudPixel Technologies builds modern websites, cloud solutions and DevOps experiences for growing businesses.",
-        "logo": "/logo.svg"
+      .hero-stats {
+        display: flex;
+        gap: 28px;
+        margin-top: 44px;
+        flex-wrap: wrap;
       }
-    </script>
+      .hero-stat {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+      }
+      .hero-stat strong {
+        font-family: 'Syne', sans-serif;
+        font-size: 26px;
+        font-weight: 800;
+        background: linear-gradient(135deg, #7c3aed, #06b6d4);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        line-height: 1;
+      }
+      .hero-stat span {
+        font-size: 11px;
+        color: #64748b;
+        letter-spacing: 0.5px;
+      }
+      /* Contact trust badges */
+      .contact-trust {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 28px;
+      }
+      .trust-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        font-size: 11px;
+        color: #94a3b8;
+        background: rgba(124,58,237,0.07);
+        border: 1px solid rgba(124,58,237,0.18);
+        padding: 6px 12px;
+        border-radius: 20px;
+        font-weight: 500;
+      }
+      .trust-badge svg { color: #10b981; }
+    </style>
   </head>
+  <body><div id="root"></div><script type="module" src="/src/main.jsx"></script></body>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
