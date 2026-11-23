@@ -1,1 +1,25 @@
 @media(max-width:1000px){.nav-links{gap:17px}.hero-grid{gap:20px}.hero-copy h1{font-size:58px}.contact-wrap{gap:38px}.footer-main{grid-template-columns:1.5fr 1fr 1fr}.footer-social{grid-column:2/4}.services-grid{grid-template-columns:repeat(2,1fr)}}@media(max-width:760px){.container{width:min(100% - 34px,560px)}.section-pad{padding:76px 0}.navbar{height:70px}.brand{font-size:15px}.brand img{width:34px;height:34px}.nav-actions{gap:10px}.nav-cta{display:none}.menu-toggle{display:block}.nav-links{display:none;position:absolute;top:69px;left:0;right:0;background:#0b1730;padding:20px 24px 25px;border-bottom:1px solid #2a3d5d;flex-direction:column;align-items:flex-start;gap:19px}.nav-links.open{display:flex}.translate-box{max-width:110px}.hero{padding-top:65px;padding-bottom:65px;min-height:auto}.hero-grid{grid-template-columns:1fr}.hero-copy h1{font-size:clamp(44px,12vw,60px);letter-spacing:-2.5px}.hero-lead{font-size:14px}.hero-visual{height:365px;margin-top:8px}.visual-window{width:92%}.code-panel{padding:22px 18px;font-size:11px}.float-top{right:-2px;top:10px}.float-bottom{left:-2px;bottom:18px}.section-heading{display:block;margin-bottom:30px}.section-heading h2{font-size:36px}.section-heading>p{margin-top:16px}.trust-inner{justify-content:center;flex-wrap:wrap;padding:18px 0;gap:10px 16px}.trust-inner>span{width:100%;text-align:center}.trust-inner b{font-size:10px}.services-grid,.portfolio-grid,.pricing-grid,.about-cards{grid-template-columns:1fr}.service-card{min-height:245px}.project-art{height:220px}.process-grid{grid-template-columns:repeat(2,1fr);gap:30px 20px}.cta-inner{align-items:flex-start;flex-direction:column}.cta-inner h2{font-size:34px}.contact-wrap{grid-template-columns:1fr;gap:35px}.contact-form{padding:22px}.footer-main{grid-template-columns:1fr 1fr;gap:30px}.footer-brand{grid-column:span 2}.footer-social{grid-column:auto}.footer-bottom{gap:12px;flex-direction:column}.subpage-hero{padding-top:75px}}@media(max-width:390px){.brand-light{display:none}.hero-buttons{flex-direction:column;align-items:stretch}.hero-buttons .btn{width:100%}.process-grid{grid-template-columns:1fr}.footer-main{grid-template-columns:1fr}.footer-brand{grid-column:auto}.footer-social{grid-column:auto}}
+/* ============================================
+   CLOUDPIXEL — RESPONSIVE OVERRIDES
+   (global.css already has the main breakpoints;
+    these fine-tune specific edge cases)
+   ============================================ */
+@media (max-width: 1024px) {
+  .hero-grid { grid-template-columns: 1fr; }
+  .hero-visual { display: none; }
+  .contact-wrap { grid-template-columns: 1fr; gap: 48px; }
+  .footer-main { grid-template-columns: 1.5fr 1fr 1fr; }
+  .footer-col:last-child { grid-column: 2; grid-row: 2; }
+}
+@media (max-width: 768px) {
+  .container { width: calc(100% - 32px); }
+  .section-pad { padding: 80px 0; }
+  .navbar { height: 72px; }
+  .nav-links { gap: 20px; font-size: 18px; padding: 32px; }
+  .brand { font-size: 17px; }
+  .brand img { width: 36px; height: 36px; }
+  .nav-cta { display: none; }
+  .hero { padding-top: 70px; padding-bottom: 70px; min-height: auto; }
+  .hero-copy h1 { font-size: clamp(40px, 11vw, 58px); letter-spacing: -2px; }
+  .hero-lead { font-size: 15px; }
+  .hero-stats { gap: 20px; }
