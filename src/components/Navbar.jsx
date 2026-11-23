@@ -24,7 +24,7 @@ export default function Navbar() {
       <nav className={open ? 'nav-links open' : 'nav-links'}>
         <a href="/#services" onClick={close}>Services</a><a href="/#work" onClick={close}>Our Work</a><a href="/#pricing" onClick={close}>Pricing</a><Link to="/about" onClick={close}>About</Link><a href="/#contact" onClick={close}>Contact</a>
       </nav>
-      <div className="nav-actions"><div id="google_translate_element" className="translate-box" aria-label="Choose Your language"></div><a className="nav-cta" href="/#contact">Let's talk <ArrowUpRight size={16}/></a><button className="menu-toggle" onClick={() => setOpen(!open)} aria-label="Toggle navigation">{open ? <X/> : <Menu/>}</button></div>
+      <div className="nav-actions"><div id="google_translate_element" className="translate-box" aria-label="Choose Your language"></div><a className="nav-cta" href="/#contact">Let's talk Further <ArrowUpRight size={16}/></a><button className="menu-toggle" onClick={() => setOpen(!open)} aria-label="Toggle navigation">{open ? <X/> : <Menu/>}</button></div>
     </div>
   </header>;
 }
