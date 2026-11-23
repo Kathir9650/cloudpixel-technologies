@@ -3,5 +3,47 @@ const plans=[
  {name:'Launch',price:'₹4,999',desc:'A polished online starting point for a new or small business.',items:['Up to 3 pages','Responsive design','Contact / WhatsApp button','Basic on-page SEO','One deployment'],featured:false},
  {name:'Growth',price:'₹9,999',desc:'More room to tell your story and generate enquiries.',items:['Up to 5 pages','Custom visual direction','Subtle animations','Contact form integration','Basic analytics setup'],featured:true},
  {name:'Premium',price:'₹19,999+',desc:'A more tailored experience for advanced business needs.',items:['Up to 10 pages','Advanced UI interactions','Custom functionality','Performance optimization','Deployment guidance'],featured:false}
-];
-export default function Pricing(){return <section id="pricing" className="section-pad"><div className="container"><div className="section-heading"><div><span className="eyebrow">SIMPLE STARTING POINTS</span><h2>Choose your <span className="gradient-text">next step.</span></h2></div><p>Clear starting prices. Every project is scoped around your goals, content and required features.</p></div><div className="pricing-grid">{plans.map(p=><article className={`price-card ${p.featured?'featured':''}`} key={p.name}>{p.featured&&<span className="popular-badge">MOST POPULAR</span>}<span className="eyebrow">{p.name.toUpperCase()} PLAN</span><h3>{p.price}</h3><p>{p.desc}</p><div className="price-divider"/><ul>{p.items.map(i=><li key={i}><Check size={16}/>{i}</li>)}</ul><a className={p.featured?'btn btn-primary':'btn btn-outline'} href="#contact">Discuss this plan <ArrowUpRight size={16}/></a></article>)}</div><p className="pricing-note">Prices are indicative starting rates in INR, not a binding quote. Domain, hosting, paid services, taxes, extra revisions and out-of-scope work may cost extra. Final scope and price will be agreed in writing.</p></div></section>}
+import { Check, ArrowUpRight, Zap, Star, Crown } from 'lucide-react';
+const plans = [
+  {
+    name: 'Launch',
+    icon: Zap,
+    iconColor: 'var(--accent-2)',
+    price: '₹4,999',
+    sub: 'starting from',
+    desc: 'The perfect digital launchpad for a new or small business that wants a professional online presence fast.',
+    items: [
+      'Up to 3 beautifully designed pages',
+      'Fully responsive, mobile-first design',
+      'Contact form & WhatsApp button',
+      'On-page SEO foundation',
+      'One deployment included',
+      'Handover with documentation',
+    ],
+    featured: false,
+  },
+  {
+    name: 'Growth',
+    icon: Star,
+    iconColor: '#c084fc',
+    price: '₹9,999',
+    sub: 'starting from',
+    desc: 'More room to tell your story, generate more enquiries, and make a lasting impression on every visitor.',
+    items: [
+      'Up to 5 pages with custom visual direction',
+      'Smooth animations & micro-interactions',
+      'Contact form + WhatsApp integration',
+      'Google Analytics setup',
+      'Blog or portfolio section',
+      'Deployment + 30-day support',
+    ],
+    featured: true,
+  },
+  {
+    name: 'Premium',
+    icon: Crown,
+    iconColor: '#f59e0b',
+    price: '₹19,999+',
+    sub: 'starting from',
+    desc: 'A fully tailored digital experience for ambitious businesses with advanced functionality and performance needs.',
+    items: [
