@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { Mail, MessageCircle, MapPin, Send, CheckCircle2 } from 'lucide-react';
-import { Mail, MessageCircle, MapPin, Send, CheckCircle2, Phone } from 'lucide-react';
 // Replace these placeholders with your real business contact details.
 const EMAIL = 'hello@cloudpixel.example';
 const WHATSAPP = '919650515004'; // Country code + number, digits only. Example: 919876543210
@@ -45,3 +44,4 @@ const methods = [
     value: 'Chat with us on WhatsApp ↗',
     link: `https://wa.me/${WHATSAPP}?text=${encodeURIComponent('Hi CloudPixel Technologies, I would like to discuss a project.')}`,
     external: true,
+  },
