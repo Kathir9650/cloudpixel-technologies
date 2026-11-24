@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#03071e" />
-    <meta name="description" content="CloudPixel Technologies — Premium websites, cloud solutions and DevOps for ambitious businesses. Fast. Reliable. Beautiful." />
-    <meta property="og:title" content="CloudPixel Technologies | Build. Innovate. Deploy." />
-    <meta property="og:description" content="Pixel-perfect websites, scalable cloud infrastructure & DevOps automation for growing businesses worldwide." />
+    <meta name="theme-color" content="#07090e" />
+    <meta name="description" content="CloudPixel Technologies — Enterprise websites, scalable cloud infrastructure and DevOps automation for ambitious businesses worldwide. Fast, secure, beautiful." />
+    <meta property="og:title" content="CloudPixel Technologies | Enterprise Web, Cloud & DevOps Studio" />
+    <meta property="og:description" content="Obsidian-tier web development, scalable AWS cloud architecture & CI/CD automation for high-growth businesses." />
     <title>CloudPixel Technologies | Build. Innovate. Deploy.</title>
     <link rel="icon" href="/logo.svg" type="image/svg+xml" />
 
@@ -14,16 +14,24 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Syne:wght@600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Syne:wght@600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
 
     <style>
+      /* Base background to prevent white flash during initial mount */
+      html, body {
+        background-color: #07090e;
+        color: #f1f5f9;
+        margin: 0;
+        padding: 0;
+      }
+
       /* Hero Stats — inline to avoid FOUC */
       .hero-stats {
         display: flex;
         gap: 28px;
-        margin-top: 44px;
+        margin-top: 40px;
         flex-wrap: wrap;
       }
       .hero-stat {
@@ -33,9 +41,9 @@
       }
       .hero-stat strong {
         font-family: 'Syne', sans-serif;
-        font-size: 26px;
+        font-size: 28px;
         font-weight: 800;
-        background: linear-gradient(135deg, #7c3aed, #06b6d4);
+        background: linear-gradient(135deg, #2563eb, #06b6d4);
         -webkit-background-clip: text;
         background-clip: text;
         color: transparent;
@@ -46,27 +54,6 @@
         color: #64748b;
         letter-spacing: 0.5px;
       }
-
-      /* Contact trust badges */
-      .contact-trust {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
-        margin-top: 28px;
-      }
-      .trust-badge {
-        display: inline-flex;
-        align-items: center;
-        gap: 6px;
-        font-size: 11px;
-        color: #94a3b8;
-        background: rgba(124,58,237,0.07);
-        border: 1px solid rgba(124,58,237,0.18);
-        padding: 6px 12px;
-        border-radius: 20px;
-        font-weight: 500;
-      }
-      .trust-badge svg { color: #10b981; }
     </style>
   </head>
   <body>
